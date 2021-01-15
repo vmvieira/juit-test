@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 import LoadingSpinner from "./LoadingSpinner";
 
@@ -10,7 +10,7 @@ const RenderTable = ({ users, loading }) => {
   }
 
   return (
-    <div>
+    <Container>
       <table className="table mt-5 text-center">
         <thead className="thead-dark">
           <tr>
@@ -39,7 +39,7 @@ const RenderTable = ({ users, loading }) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </Container>
   );
 };
 
